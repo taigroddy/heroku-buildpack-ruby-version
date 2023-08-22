@@ -3,8 +3,7 @@
 BUILD_DIR=$1
 
 if [ -f $BUILD_DIR/Gemfile ] \
-  && [ -f $BUILD_DIR/.ruby-version ] \
-  && ! grep -q "^ruby\s" $BUILD_DIR/Gemfile; then
+  && ! grep -q "^ruby\s" ./Gemfile; then
   echo "Ruby version"
   exit 0
 else
